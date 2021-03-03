@@ -1,0 +1,16 @@
+﻿@page
+@model firstproject.Pages.Forms.SignUpModel
+@{
+    ViewData["Title"] =  "SignUp";
+}
+<form method="post">
+    <div asp-validation-summary="All" style="color:red"></div>
+    <input asp-for="Person.address" placeholder="Email Address" />
+    <input asp-for="Person.password" placeholder="Password" />
+    <input asp-for="Person.firstname" placeholder="FirstName" />
+    <input asp-for="Person.lastname" placeholder="LastName" />
+    <input asp-for="Person.day" placeholder="Day" />
+    <input asp-for="Person.month" placeholder="Month" />
+    <input asp-for="Person.year" placeholder="Year" />
+    <button type="submit">Submit</button>
+</form>
